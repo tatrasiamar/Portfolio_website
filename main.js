@@ -1,4 +1,4 @@
-let menuIcon = document.querySelector('#menu-icon'); // Corrected variable name
+let menuIcon = document.querySelector('#menu-icon'); 
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
@@ -19,8 +19,8 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if (top >= offset && top < offset + height) {
-            navLinks.forEach(link => { // Corrected variable name
-                link.classList.remove('active'); // Corrected method name
+            navLinks.forEach(link => { 
+                link.classList.remove('active'); 
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
             });
         };
@@ -39,19 +39,19 @@ window.onscroll = () => {
 ScrollReveal({
     distance: '80px',
     duration: 200,
-    delay: 200, // Corrected property name
+    delay: 200, 
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' }); // Corrected selector
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' }); // Corrected selector
-ScrollReveal().reveal('.about-img, .home-content h1', { origin: 'left' }); // Corrected selector
-ScrollReveal().reveal('.about-content, .home-content p', { origin: 'right' }); // Corrected selector
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' }); 
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' }); 
+ScrollReveal().reveal('.about-img, .home-content h1', { origin: 'left' }); 
+ScrollReveal().reveal('.about-content, .home-content p', { origin: 'right' }); 
 
 /*............. Typed js ...............*/
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Web Designer', 'FullStack Developer'], // Corrected property name
-    typeSpeed: 70, // Corrected property name
-    backSpeed: 70, // Corrected property name
-    backDelay: 1000, // Corrected property name
+    strings: ['Frontend Developer', 'Web Designer', 'FullStack Developer'], 
+    typeSpeed: 70, 
+    backSpeed: 70, 
+    backDelay: 1000, 
     loop: true,
 });
